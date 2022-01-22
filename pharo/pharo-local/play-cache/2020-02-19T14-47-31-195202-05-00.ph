@@ -1,0 +1,1 @@
+| deck winner  dict x| Transcript clear.deck := Poker new. winner := deck deal:  #(1 2 3 4 5 6 7 8 9 10). Transcript show: winner; cr

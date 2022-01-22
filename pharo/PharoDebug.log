@@ -1,0 +1,1661 @@
+THERE_BE_DRAGONS_HERE
+Pharo cannot locate the sources file named C:\Users\Hamster\Desktop\work\prjcts\poker\pharo\Pharo8.0-32bit-bbcdf97.sources.
+
+Please check that the file is named properly and is in the
+same directory as this image.
+20 December 2020 1:09:15.479885 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2504 uuid: a00b0fad-c04c-47a6-8a11-5dbff110ac11 Jan  5 2019
+StackToRegisterMappingCogit VMMaker.oscog-eem.2504 uuid: a00b0fad-c04c-47a6-8a11-5dbff110ac11 Jan  5 2019
+VM: 201901051900 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Sat Jan 5 20:00:11 2019 CommitHash: 7a3c6b6 Plugins: 201901051900 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo8.0.0 [Build information: Pharo-8.0.0+build.1122.sha.bbcdf9770748d12e2c1b84f168f0232e4f918d20 (32 Bit)]
+
+StartupUIManager>>inform:
+	Receiver: a StartupUIManager
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named C:\Users\Hamster\Desktop\work...etc...
+		tmp1: 	ni
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoFilesOpener(Object)>>inform:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named C:\Users\Hamster\Desktop\work...etc..
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'the sources file named C:\Users\Hamster\Desktop\work\prjcts\poker\pharo\...etc..
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withSourceRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'C:\Users\Hamster\Desktop\work\prjcts\poker\pharo\Pharo8.0-32bit-bbcdf97....etc..
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>informCannotLocateSources
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc..
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>sourcesFileOrNil
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	SourceFile(C:\Users\Hamster\Desktop\work\prjcts\poker\pharo\Pharo8.0-32bi...etc..
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+SourceFileArray>>ensureOpen
+	Receiver: a SourceFileArray
+	Arguments and temporary variables: 
+		tmp1: 	nil
+		tmp2: 	ni
+	Receiver's instance variables: 
+		files: 	#(nil nil)
+		readOnlyQueue: 	SharedQueue with 0 items
+		flushChanges: 	true
+
+
+SmalltalkImage>>openSourceFiles
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		vm: 	a VirtualMachine
+
+
+SourceFileArray class>>startUp:
+	Receiver: SourceFileArray
+	Arguments and temporary variables: 
+		arg1: 	tru
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#changeRecordsFor:->SourceFileArray>>#changeReco...etc...
+		format: 	65539
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SourceFileArray
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-Sources-Sources'
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(SourceFileArray)
+	Arguments and temporary variables: 
+		arg1: 	tru
+	Receiver's instance variables: 
+		registeredClassName: 	#SourceFileArray
+
+
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	a ClassSessionHandler(SourceFileArray
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2020-12-20T13:09:15.362885-05:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2020-12-20T13:09:15.362885-05:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+BlockClosure>>on:do:
+	Receiver: [ arg2 value: arg3 ]
+	Arguments and temporary variables: 
+		arg1: 	Exception
+		arg2: 	[ :arg4 | self errorHandler handleError: arg4 
+	Receiver's instance variables: 
+		outerContext: 	[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | sel...etc...
+		startpc: 	41
+		numArgs: 	0
+
+
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2020-12-20T13:09:15.362885-05:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2020-12-20T13:09:15.362885-05:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	tru
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2020-12-20T13:09:15.362885-05:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	tru
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2020-12-20T13:09:15.362885-05:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+SessionManager>>launchSnapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+		tmp1: 	true
+		tmp2: 	tru
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ] in SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+	Receiver: [ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		outerContext: 	SessionManager>>snapshot:andQuit:
+		startpc: 	79
+		numArgs: 	0
+
+
+
+--- The full stack ---
+StartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withSourceRef:
+PharoFilesOpener>>informCannotLocateSources
+PharoFilesOpener>>sourcesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SourceFileArray class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+BlockClosure>>on:do:
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>launchSnapshot:andQuit:
+[ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ] in SessionManager>>snapshot:andQuit:
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+#deck is missing, and does not understand #deal:
+20 December 2020 1:11:37.598885 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2504 uuid: a00b0fad-c04c-47a6-8a11-5dbff110ac11 Jan  5 2019
+StackToRegisterMappingCogit VMMaker.oscog-eem.2504 uuid: a00b0fad-c04c-47a6-8a11-5dbff110ac11 Jan  5 2019
+VM: 201901051900 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Sat Jan 5 20:00:11 2019 CommitHash: 7a3c6b6 Plugins: 201901051900 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo8.0.0 [Build information: Pharo-8.0.0+build.1122.sha.bbcdf9770748d12e2c1b84f168f0232e4f918d20 (32 Bit)]
+
+UndefinedObject>>doesNotUnderstand: #deal:
+	Receiver: nil
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+nil
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		tmp1: 	ni
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ winner := deck deal: #(1 2 3 4 5 6 7 8 9 10)
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(602572544)
+		findReplaceService: 	nil
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+		completionEngine: 	a CompletionEngine
+
+
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		arg1: 	[ :arg1 | arg1 class instanceSide browse 
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(602572544)
+		findReplaceService: 	nil
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+		completionEngine: 	a CompletionEngine
+
+
+RubSmalltalkEditor>>browseClassOfExpression
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(602572544)
+		findReplaceService: 	nil
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+		completionEngine: 	a CompletionEngine
+
+
+RubSmalltalkEditor>>browseFullClass
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(602572544)
+		findReplaceService: 	nil
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+		completionEngine: 	a CompletionEngine
+
+
+[ :arg2 | arg2 perform: arg1 ] in GLMTextEditorRequest class>>for:
+	Receiver: GLMTextEditorRequest
+	Arguments and temporary variables: 
+		arg1: 	#browseFullClass
+		arg2: 	a RubSmalltalkEdito
+	Receiver's instance variables: 
+		superclass: 	Announcement
+		methodDict: 	a MethodDictionary(#action->GLMTextEditorRequest>>#action #action:-...etc...
+		format: 	65537
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#GLMTextEditorRequest
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Glamour-Presentations-Announcements'
+
+
+GLMMorphicPharoScriptRenderer(GLMMorphicRubricTextRenderer)>>actOnTextEditorRequest:
+	Receiver: a GLMMorphicPharoScriptRenderer
+	Arguments and temporary variables: 
+		arg1: 	a GLMTextEditorReques
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		textMorph: 	a RubScrolledTextMorph(9721088)
+		textModel: 	a GLMRubricSmalltalkTextModel
+
+
+MessageSend>>value:
+	Receiver: MessageSend(#actOnTextEditorRequest: -> a GLMMorphicPharoScriptRenderer)
+	Arguments and temporary variables: 
+		arg1: 	a GLMTextEditorReques
+	Receiver's instance variables: 
+		receiver: 	a GLMMorphicPharoScriptRenderer
+		selector: 	#actOnTextEditorRequest:
+		arguments: 	#()
+
+
+MessageSend>>cull:
+	Receiver: MessageSend(#actOnTextEditorRequest: -> a GLMMorphicPharoScriptRenderer)
+	Arguments and temporary variables: 
+		arg1: 	a GLMTextEditorReques
+	Receiver's instance variables: 
+		receiver: 	a GLMMorphicPharoScriptRenderer
+		selector: 	#actOnTextEditorRequest:
+		arguments: 	#()
+
+
+MessageSend>>cull:cull:
+	Receiver: MessageSend(#actOnTextEditorRequest: -> a GLMMorphicPharoScriptRenderer)
+	Arguments and temporary variables: 
+		arg1: 	a GLMTextEditorRequest
+		arg2: 	a GLMPharoScriptPresentation(id=846270464 title=a GTPlaygroundEditableTab...etc..
+	Receiver's instance variables: 
+		receiver: 	a GLMMorphicPharoScriptRenderer
+		selector: 	#actOnTextEditorRequest:
+		arguments: 	#()
+
+
+[ action cull: arg1 cull: announcer ] in AnnouncementSubscription>>deliver:
+	Receiver: an AnnouncementSubscription
+	Arguments and temporary variables: 
+		arg1: 	a GLMTextEditorReques
+	Receiver's instance variables: 
+		announcer: 	a GLMPharoScriptPresentation(id=846270464 title=a GTPlaygroundEditab...etc...
+		announcementClass: 	GLMTextEditorRequest
+		subscriber: 	a GLMMorphicPharoScriptRenderer
+		action: 	MessageSend(#actOnTextEditorRequest: -> a GLMMorphicPharoScriptRenderer...etc...
+
+
+BlockClosure>>on:do:
+	Receiver: [ action cull: arg1 cull: announcer ]
+	Arguments and temporary variables: 
+		arg1: 	UnhandledError
+		arg2: 	[ :arg3 | 
+| tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 |
+tmp2 := thisContext.
+tmp6 :=...etc..
+	Receiver's instance variables: 
+		outerContext: 	AnnouncementSubscription>>deliver:
+		startpc: 	47
+		numArgs: 	0
+
+
+BlockClosure>>on:fork:
+	Receiver: [ action cull: arg1 cull: announcer ]
+	Arguments and temporary variables: 
+		arg1: 	UnhandledError
+		arg2: 	[ :arg2 | arg2 pass 
+	Receiver's instance variables: 
+		outerContext: 	AnnouncementSubscription>>deliver:
+		startpc: 	47
+		numArgs: 	0
+
+
+AnnouncementSubscription>>deliver:
+	Receiver: an AnnouncementSubscription
+	Arguments and temporary variables: 
+		arg1: 	a GLMTextEditorReques
+	Receiver's instance variables: 
+		announcer: 	a GLMPharoScriptPresentation(id=846270464 title=a GTPlaygroundEditab...etc...
+		announcementClass: 	GLMTextEditorRequest
+		subscriber: 	a GLMMorphicPharoScriptRenderer
+		action: 	MessageSend(#actOnTextEditorRequest: -> a GLMMorphicPharoScriptRenderer...etc...
+
+
+[ tmp4 deliver: arg1 ] in SubscriptionRegistry>>deliver:to:startingAt:
+	Receiver: a SubscriptionRegistry
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		subscriptions: 	an IdentitySet(an AnnouncementSubscription an AnnouncementSubscr...etc...
+		monitor: 	a Semaphore()
+
+
+BlockClosure>>ifCurtailed:
+	Receiver: [ tmp4 deliver: arg1 ]
+	Arguments and temporary variables: 
+		arg1: 	[ self deliver: arg1 to: arg2 startingAt: tmp3 + 1 ]
+		tmp1: 	nil
+		tmp2: 	ni
+	Receiver's instance variables: 
+		outerContext: 	SubscriptionRegistry>>deliver:to:startingAt:
+		startpc: 	54
+		numArgs: 	0
+
+
+SubscriptionRegistry>>deliver:to:startingAt:
+	Receiver: a SubscriptionRegistry
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		subscriptions: 	an IdentitySet(an AnnouncementSubscription an AnnouncementSubscr...etc...
+		monitor: 	a Semaphore()
+
+
+SubscriptionRegistry>>deliver:to:
+	Receiver: a SubscriptionRegistry
+	Arguments and temporary variables: 
+		arg1: 	a GLMTextEditorRequest
+		arg2: 	an Array(an AnnouncementSubscription
+	Receiver's instance variables: 
+		subscriptions: 	an IdentitySet(an AnnouncementSubscription an AnnouncementSubscr...etc...
+		monitor: 	a Semaphore()
+
+
+SubscriptionRegistry>>deliver:
+	Receiver: a SubscriptionRegistry
+	Arguments and temporary variables: 
+		tmp2: 	an Array(an AnnouncementSubscription)
+		arg1: 	a GLMTextEditorReques
+	Receiver's instance variables: 
+		subscriptions: 	an IdentitySet(an AnnouncementSubscription an AnnouncementSubscr...etc...
+		monitor: 	a Semaphore()
+
+
+GLMPharoScriptPresentation(Announcer)>>announce:
+	Receiver: a GLMPharoScriptPresentation(id=846270464 title=a GTPlaygroundEditableTabLabel(762146816) ...etc...
+	Arguments and temporary variables: 
+		arg1: 	a GLMTextEditorRequest
+		tmp1: 	a GLMTextEditorReques
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(250507264 1)
+		title: 	[ :arg2 | 
+| tmp4 |
+tmp4 := GTPlaygroundEditableTabLabel new.
+tmp4
+	text...etc...
+		titleIcon: 	nil
+		transformation: 	[ :arg1 | arg1 ]
+		actions: 	an OrderedCollection(a GLMGenericAction a GLMGenericAction a GLMPopupA...etc...
+		condition: 	[ true ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	true
+		parentPrototype: 	<<error during printing>>
+
+GLMPharoScriptPresentation(GLMAnnouncer)>>announce:
+	Receiver: a GLMPharoScriptPresentation(id=846270464 title=a GTPlaygroundEditableTabLabel(992546816) ...etc...
+	Arguments and temporary variables: 
+		arg1: 	a GLMTextEditorReques
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(250507264 1)
+		title: 	[ :arg2 | 
+| tmp4 |
+tmp4 := GTPlaygroundEditableTabLabel new.
+tmp4
+	text...etc...
+		titleIcon: 	nil
+		transformation: 	[ :arg1 | arg1 ]
+		actions: 	an OrderedCollection(a GLMGenericAction a GLMGenericAction a GLMPopupA...etc...
+		condition: 	[ true ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	true
+		parentPrototype: 	<<error during printing>>
+
+GLMPharoScriptPresentation(GLMLoggedObject)>>announce:
+	Receiver: a GLMPharoScriptPresentation(id=846270464 title=a GTPlaygroundEditableTabLabel(1024946176)...etc...
+	Arguments and temporary variables: 
+		arg1: 	a GLMTextEditorReques
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(250507264 1)
+		title: 	[ :arg2 | 
+| tmp4 |
+tmp4 := GTPlaygroundEditableTabLabel new.
+tmp4
+	text...etc...
+		titleIcon: 	nil
+		transformation: 	[ :arg1 | arg1 ]
+		actions: 	an OrderedCollection(a GLMGenericAction a GLMGenericAction a GLMPopupA...etc...
+		condition: 	[ true ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	true
+		parentPrototype: 	<<error during printing>>
+
+GLMPharoScriptPresentation(GLMRubricSmalltalkCodePresentation)>>browseFullClass
+	Receiver: a GLMPharoScriptPresentation(id=846270464 title=a GTPlaygroundEditableTabLabel(67047424) p...etc...
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(250507264 1)
+		title: 	[ :arg2 | 
+| tmp4 |
+tmp4 := GTPlaygroundEditableTabLabel new.
+tmp4
+	text...etc...
+		titleIcon: 	nil
+		transformation: 	[ :arg1 | arg1 ]
+		actions: 	an OrderedCollection(a GLMGenericAction a GLMGenericAction a GLMPopupA...etc...
+		condition: 	[ true ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	true
+		parentPrototype: 	<<error during printing>>
+
+[ :arg1 | arg1 browseFullClass ] in GLMPharoScriptPresentation(GLMRubricSmalltalkCodePresentation)>>browsingSelectionActions
+	Receiver: a GLMPharoScriptPresentation(id=846270464 title=a GTPlaygroundEditableTabLabel(795701248) ...etc...
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(250507264 1)
+		title: 	[ :arg2 | 
+| tmp4 |
+tmp4 := GTPlaygroundEditableTabLabel new.
+tmp4
+	text...etc...
+		titleIcon: 	nil
+		transformation: 	[ :arg1 | arg1 ]
+		actions: 	an OrderedCollection(a GLMGenericAction a GLMGenericAction a GLMPopupA...etc...
+		condition: 	[ true ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	true
+		parentPrototype: 	<<error during printing>>
+
+BlockClosure>>glamourValueWithArgs:
+	Receiver: [ :arg1 | arg1 browseFullClass ]
+	Arguments and temporary variables: 
+		arg1: 	an Array(a GLMPharoScriptPresentation(id=846270464 title=a GTPlaygroundEd...etc..
+	Receiver's instance variables: 
+		outerContext: 	GLMPharoScriptPresentation(GLMRubricSmalltalkCodePresentation)>>b...etc...
+		startpc: 	132
+		numArgs: 	1
+
+
+GLMGenericAction(GLMAction)>>actOn:
+	Receiver: a GLMGenericAction
+	Arguments and temporary variables: 
+		arg1: 	a GLMPharoScriptPresentation(id=846270464 title=a GTPlaygroundEditableTab...etc..
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	nil
+		suspendedAnnouncemets: 	nil
+		logger: 	a GLMNullLogger
+		action: 	[ :arg1 | arg1 browseFullClass ]
+		title: 	'Browse Full Class'
+		help: 	nil
+		keymap: 	Meta + b
+		position: 	nil
+		category: 	'Code search...'
+		icon: 	nil
+		condition: 	nil
+		enabledCondition: 	nil
+		separatorAfter: 	nil
+		separatorBefore: 	nil
+		shouldShowTitle: 	nil
+
+
+GLMGenericAction(GLMAction)>>morphicActOn:
+	Receiver: a GLMGenericAction
+	Arguments and temporary variables: 
+		arg1: 	a GLMPharoScriptPresentation(id=846270464 title=a GTPlaygroundEditableTab...etc..
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	nil
+		suspendedAnnouncemets: 	nil
+		logger: 	a GLMNullLogger
+		action: 	[ :arg1 | arg1 browseFullClass ]
+		title: 	'Browse Full Class'
+		help: 	nil
+		keymap: 	Meta + b
+		position: 	nil
+		category: 	'Code search...'
+		icon: 	nil
+		condition: 	nil
+		enabledCondition: 	nil
+		separatorAfter: 	nil
+		separatorBefore: 	nil
+		shouldShowTitle: 	nil
+
+
+[ :arg3 | arg3 action morphicActOn: arg2 ] in GLMMorphicPharoScriptRenderer(GLMMorphicWidgetRenderer)>>installActionsOnModel:fromPresentation:
+	Receiver: a GLMMorphicPharoScriptRenderer
+	Arguments and temporary variables: 
+		arg1: 	a GLMRubricSmalltalkTextModel
+		arg2: 	a GLMPharoScriptPresentation(id=846270464 title=a GTPlaygroundEditableTab...etc...
+		arg3: 	a GLMMenuItemSelecte
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		textMorph: 	a RubScrolledTextMorph(9721088)
+		textModel: 	a GLMRubricSmalltalkTextModel
+
+
+BlockClosure>>cull:
+	Receiver: [ :arg3 | arg3 action morphicActOn: arg2 ]
+	Arguments and temporary variables: 
+		arg1: 	a GLMMenuItemSelecte
+	Receiver's instance variables: 
+		outerContext: 	GLMMorphicPharoScriptRenderer(GLMMorphicWidgetRenderer)>>installA...etc...
+		startpc: 	44
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:
+	Receiver: [ :arg3 | arg3 action morphicActOn: arg2 ]
+	Arguments and temporary variables: 
+		arg1: 	a GLMMenuItemSelected
+		arg2: 	a GLMRubricSmalltalkTextMode
+	Receiver's instance variables: 
+		outerContext: 	GLMMorphicPharoScriptRenderer(GLMMorphicWidgetRenderer)>>installA...etc...
+		startpc: 	44
+		numArgs: 	1
+
+
+[ action cull: arg1 cull: announcer ] in AnnouncementSubscription>>deliver:
+	Receiver: an AnnouncementSubscription
+	Arguments and temporary variables: 
+		arg1: 	a GLMMenuItemSelecte
+	Receiver's instance variables: 
+		announcer: 	a GLMRubricSmalltalkTextModel
+		announcementClass: 	GLMMenuItemSelected
+		subscriber: 	a GLMMorphicPharoScriptRenderer
+		action: 	[ :arg3 | arg3 action morphicActOn: arg2 ]
+
+
+BlockClosure>>on:do:
+	Receiver: [ action cull: arg1 cull: announcer ]
+	Arguments and temporary variables: 
+		arg1: 	UnhandledError
+		arg2: 	[ :arg3 | 
+| tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 |
+tmp2 := thisContext.
+tmp6 :=...etc..
+	Receiver's instance variables: 
+		outerContext: 	AnnouncementSubscription>>deliver:
+		startpc: 	47
+		numArgs: 	0
+
+
+BlockClosure>>on:fork:
+	Receiver: [ action cull: arg1 cull: announcer ]
+	Arguments and temporary variables: 
+		arg1: 	UnhandledError
+		arg2: 	[ :arg2 | arg2 pass 
+	Receiver's instance variables: 
+		outerContext: 	AnnouncementSubscription>>deliver:
+		startpc: 	47
+		numArgs: 	0
+
+
+AnnouncementSubscription>>deliver:
+	Receiver: an AnnouncementSubscription
+	Arguments and temporary variables: 
+		arg1: 	a GLMMenuItemSelecte
+	Receiver's instance variables: 
+		announcer: 	a GLMRubricSmalltalkTextModel
+		announcementClass: 	GLMMenuItemSelected
+		subscriber: 	a GLMMorphicPharoScriptRenderer
+		action: 	[ :arg3 | arg3 action morphicActOn: arg2 ]
+
+
+[ tmp4 deliver: arg1 ] in SubscriptionRegistry>>deliver:to:startingAt:
+	Receiver: a SubscriptionRegistry
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		subscriptions: 	an IdentitySet(an AnnouncementSubscription an AnnouncementSubscr...etc...
+		monitor: 	a Semaphore()
+
+
+BlockClosure>>ifCurtailed:
+	Receiver: [ tmp4 deliver: arg1 ]
+	Arguments and temporary variables: 
+		arg1: 	[ self deliver: arg1 to: arg2 startingAt: tmp3 + 1 ]
+		tmp1: 	nil
+		tmp2: 	ni
+	Receiver's instance variables: 
+		outerContext: 	SubscriptionRegistry>>deliver:to:startingAt:
+		startpc: 	54
+		numArgs: 	0
+
+
+SubscriptionRegistry>>deliver:to:startingAt:
+	Receiver: a SubscriptionRegistry
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		subscriptions: 	an IdentitySet(an AnnouncementSubscription an AnnouncementSubscr...etc...
+		monitor: 	a Semaphore()
+
+
+
+--- The full stack ---
+UndefinedObject>>doesNotUnderstand: #deal:
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+RubSmalltalkEditor>>browseClassOfExpression
+RubSmalltalkEditor>>browseFullClass
+[ :arg2 | arg2 perform: arg1 ] in GLMTextEditorRequest class>>for:
+GLMMorphicPharoScriptRenderer(GLMMorphicRubricTextRenderer)>>actOnTextEditorRequest:
+MessageSend>>value:
+MessageSend>>cull:
+MessageSend>>cull:cull:
+[ action cull: arg1 cull: announcer ] in AnnouncementSubscription>>deliver:
+BlockClosure>>on:do:
+BlockClosure>>on:fork:
+AnnouncementSubscription>>deliver:
+[ tmp4 deliver: arg1 ] in SubscriptionRegistry>>deliver:to:startingAt:
+BlockClosure>>ifCurtailed:
+SubscriptionRegistry>>deliver:to:startingAt:
+SubscriptionRegistry>>deliver:to:
+SubscriptionRegistry>>deliver:
+GLMPharoScriptPresentation(Announcer)>>announce:
+GLMPharoScriptPresentation(GLMAnnouncer)>>announce:
+GLMPharoScriptPresentation(GLMLoggedObject)>>announce:
+GLMPharoScriptPresentation(GLMRubricSmalltalkCodePresentation)>>browseFullClass
+[ :arg1 | arg1 browseFullClass ] in GLMPharoScriptPresentation(GLMRubricSmalltalkCodePresentation)>>browsingSelectionActions
+BlockClosure>>glamourValueWithArgs:
+GLMGenericAction(GLMAction)>>actOn:
+GLMGenericAction(GLMAction)>>morphicActOn:
+[ :arg3 | arg3 action morphicActOn: arg2 ] in GLMMorphicPharoScriptRenderer(GLMMorphicWidgetRenderer)>>installActionsOnModel:fromPresentation:
+BlockClosure>>cull:
+BlockClosure>>cull:cull:
+[ action cull: arg1 cull: announcer ] in AnnouncementSubscription>>deliver:
+BlockClosure>>on:do:
+BlockClosure>>on:fork:
+AnnouncementSubscription>>deliver:
+[ tmp4 deliver: arg1 ] in SubscriptionRegistry>>deliver:to:startingAt:
+BlockClosure>>ifCurtailed:
+SubscriptionRegistry>>deliver:to:startingAt:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+SubscriptionRegistry>>deliver:to:
+SubscriptionRegistry>>deliver:
+GLMRubricSmalltalkTextModel(Announcer)>>announce:
+GLMRubricSmalltalkTextModel(GLMMorphicModel)>>executeMenuAction:
+[ | tmp2 |
+(tmp2 := selector numArgs) = 0
+	ifTrue: [ target perform: selector ]
+	ifFalse: [ tmp2 = arguments size
+			ifTrue: [ target perform: selector withArguments: arguments ]
+			ifFalse: [ target perform: selector withArguments: (arguments copyWith: arg1) ] ].
+self
+	showShortcut;
+	changed ] in ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+BlockClosure>>ensure:
+CursorWithMask(Cursor)>>showWhile:
+ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+ToggleMenuItemMorph(MenuItemMorph)>>mouseUp:
+ToggleMenuItemMorph(MenuItemMorph)>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+ToggleMenuItemMorph(Morph)>>handleEvent:
+MorphicEventDispatcher>>dispatchDefault:with:
+MorphicEventDispatcher>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+ToggleMenuItemMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchDefault:with:
+MorphicEventDispatcher>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+MenuMorph(Morph)>>processEvent:using:
+MenuMorph(Morph)>>processEvent:
+MenuMorph>>handleFocusEvent:
+[ ActiveHand := self.
+ActiveEvent := arg1.
+tmp3 := arg2
+	handleFocusEvent: (arg1 transformedBy: (arg2 transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendMouseEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEventsFromQueue:
+HandMorph>>processEvents
+[ :arg2 | 
+self activeHand: arg2.
+arg2 processEvents.
+self activeHand: nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldState>>doOneSubCycleFor:
+WorldMorph>>doOneSubCycle
+MenuMorph>>invokeModalAt:in:allowKeyboard:
+MenuMorph>>invokeModal:
+MenuMorph>>invokeModal
+RubEditingArea(RubAbstractTextArea)>>yellowButtonActivity:
+RubEditingArea(RubAbstractTextArea)>>mouseDown:
+RubTextScrollPane>>mouseDown:
+RubScrolledTextMorph>>mouseDown:
+RubScrolledTextMorph(Morph)>>handleMouseDown:
+RubScrolledTextMorph>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+RubScrolledTextMorph(Morph)>>handleEvent:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+RubScrolledTextMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMPanelMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+LazyTabGroupMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMPanelMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMMorphBrick(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMScrollPaneBandBrick(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMPagerScrollBrick(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMPagerBrick(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMFoundationBrick(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMSystemWindow(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+WorldMorph(Morph)>>processEvent:using:
+WorldMorph(Morph)>>processEvent:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendMouseEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEventsFromQueue:
+HandMorph>>processEvents
+[ :arg2 | 
+self activeHand: arg2.
+arg2 processEvents.
+self activeHand: nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+WorldMorph class>>doOneCycle
+[ [ WorldMorph doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+Pharo cannot locate the sources file named C:\Users\Hamster\Desktop\work\prjcts\poker\pharo\Pharo8.0-32bit-bbcdf97.sources.
+
+Please check that the file is named properly and is in the
+same directory as this image.
+20 December 2020 1:16:19.513417 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2504 uuid: a00b0fad-c04c-47a6-8a11-5dbff110ac11 Jan  5 2019
+StackToRegisterMappingCogit VMMaker.oscog-eem.2504 uuid: a00b0fad-c04c-47a6-8a11-5dbff110ac11 Jan  5 2019
+VM: 201901051900 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Sat Jan 5 20:00:11 2019 CommitHash: 7a3c6b6 Plugins: 201901051900 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo8.0.0 [Build information: Pharo-8.0.0+build.1122.sha.bbcdf9770748d12e2c1b84f168f0232e4f918d20 (32 Bit)]
+
+StartupUIManager>>inform:
+	Receiver: a StartupUIManager
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named C:\Users\Hamster\Desktop\work...etc...
+		tmp1: 	ni
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoFilesOpener(Object)>>inform:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named C:\Users\Hamster\Desktop\work...etc..
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'the sources file named C:\Users\Hamster\Desktop\work\prjcts\poker\pharo\...etc..
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withSourceRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'C:\Users\Hamster\Desktop\work\prjcts\poker\pharo\Pharo8.0-32bit-bbcdf97....etc..
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>informCannotLocateSources
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc..
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>sourcesFileOrNil
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	SourceFile(C:\Users\Hamster\Desktop\work\prjcts\poker\pharo\Pharo8.0-32bi...etc..
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+SourceFileArray>>ensureOpen
+	Receiver: a SourceFileArray
+	Arguments and temporary variables: 
+		tmp1: 	nil
+		tmp2: 	ni
+	Receiver's instance variables: 
+		files: 	#(nil nil)
+		readOnlyQueue: 	SharedQueue with 0 items
+		flushChanges: 	true
+
+
+SmalltalkImage>>openSourceFiles
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		vm: 	a VirtualMachine
+
+
+SourceFileArray class>>startUp:
+	Receiver: SourceFileArray
+	Arguments and temporary variables: 
+		arg1: 	tru
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#changeRecordsFor:->SourceFileArray>>#changeReco...etc...
+		format: 	65539
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SourceFileArray
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-Sources-Sources'
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(SourceFileArray)
+	Arguments and temporary variables: 
+		arg1: 	tru
+	Receiver's instance variables: 
+		registeredClassName: 	#SourceFileArray
+
+
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	a ClassSessionHandler(SourceFileArray
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2020-12-20T13:16:19.425417-05:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2020-12-20T13:16:19.425417-05:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+BlockClosure>>on:do:
+	Receiver: [ arg2 value: arg3 ]
+	Arguments and temporary variables: 
+		arg1: 	Exception
+		arg2: 	[ :arg4 | self errorHandler handleError: arg4 
+	Receiver's instance variables: 
+		outerContext: 	[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | sel...etc...
+		startpc: 	41
+		numArgs: 	0
+
+
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2020-12-20T13:16:19.425417-05:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2020-12-20T13:16:19.425417-05:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	tru
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2020-12-20T13:16:19.425417-05:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	tru
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2020-12-20T13:16:19.425417-05:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+SessionManager>>launchSnapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+		tmp1: 	true
+		tmp2: 	tru
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ] in SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+	Receiver: [ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		outerContext: 	SessionManager>>snapshot:andQuit:
+		startpc: 	79
+		numArgs: 	0
+
+
+
+--- The full stack ---
+StartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withSourceRef:
+PharoFilesOpener>>informCannotLocateSources
+PharoFilesOpener>>sourcesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SourceFileArray class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+BlockClosure>>on:do:
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>launchSnapshot:andQuit:
+[ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ] in SessionManager>>snapshot:andQuit:
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+Pharo cannot locate the sources file named C:\Users\Hamster\Desktop\work\prjcts\poker\pharo\Pharo8.0-32bit-bbcdf97.sources.
+
+Please check that the file is named properly and is in the
+same directory as this image.
+6 January 2021 9:52:51.079875 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2504 uuid: a00b0fad-c04c-47a6-8a11-5dbff110ac11 Jan  5 2019
+StackToRegisterMappingCogit VMMaker.oscog-eem.2504 uuid: a00b0fad-c04c-47a6-8a11-5dbff110ac11 Jan  5 2019
+VM: 201901051900 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Sat Jan 5 20:00:11 2019 CommitHash: 7a3c6b6 Plugins: 201901051900 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo8.0.0 [Build information: Pharo-8.0.0+build.1122.sha.bbcdf9770748d12e2c1b84f168f0232e4f918d20 (32 Bit)]
+
+StartupUIManager>>inform:
+	Receiver: a StartupUIManager
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named C:\Users\Hamster\Desktop\work...etc...
+		tmp1: 	ni
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoFilesOpener(Object)>>inform:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named C:\Users\Hamster\Desktop\work...etc..
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'the sources file named C:\Users\Hamster\Desktop\work\prjcts\poker\pharo\...etc..
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withSourceRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'C:\Users\Hamster\Desktop\work\prjcts\poker\pharo\Pharo8.0-32bit-bbcdf97....etc..
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>informCannotLocateSources
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc..
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>sourcesFileOrNil
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	SourceFile(C:\Users\Hamster\Desktop\work\prjcts\poker\pharo\Pharo8.0-32bi...etc..
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+SourceFileArray>>ensureOpen
+	Receiver: a SourceFileArray
+	Arguments and temporary variables: 
+		tmp1: 	nil
+		tmp2: 	ni
+	Receiver's instance variables: 
+		files: 	#(nil nil)
+		readOnlyQueue: 	SharedQueue with 0 items
+		flushChanges: 	true
+
+
+SmalltalkImage>>openSourceFiles
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		vm: 	a VirtualMachine
+
+
+SourceFileArray class>>startUp:
+	Receiver: SourceFileArray
+	Arguments and temporary variables: 
+		arg1: 	tru
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#changeRecordsFor:->SourceFileArray>>#changeReco...etc...
+		format: 	65539
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SourceFileArray
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-Sources-Sources'
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(SourceFileArray)
+	Arguments and temporary variables: 
+		arg1: 	tru
+	Receiver's instance variables: 
+		registeredClassName: 	#SourceFileArray
+
+
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	a ClassSessionHandler(SourceFileArray
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2021-01-06T21:52:50.929875-05:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2021-01-06T21:52:50.929875-05:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+BlockClosure>>on:do:
+	Receiver: [ arg2 value: arg3 ]
+	Arguments and temporary variables: 
+		arg1: 	Exception
+		arg2: 	[ :arg4 | self errorHandler handleError: arg4 
+	Receiver's instance variables: 
+		outerContext: 	[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | sel...etc...
+		startpc: 	41
+		numArgs: 	0
+
+
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2021-01-06T21:52:50.929875-05:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2021-01-06T21:52:50.929875-05:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	tru
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2021-01-06T21:52:50.929875-05:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	tru
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2021-01-06T21:52:50.929875-05:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+SessionManager>>launchSnapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+		tmp1: 	true
+		tmp2: 	tru
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ] in SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+	Receiver: [ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		outerContext: 	SessionManager>>snapshot:andQuit:
+		startpc: 	79
+		numArgs: 	0
+
+
+
+--- The full stack ---
+StartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withSourceRef:
+PharoFilesOpener>>informCannotLocateSources
+PharoFilesOpener>>sourcesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SourceFileArray class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+BlockClosure>>on:do:
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>launchSnapshot:andQuit:
+[ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ] in SessionManager>>snapshot:andQuit:
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+

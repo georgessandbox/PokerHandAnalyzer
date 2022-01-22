@@ -1,0 +1,65 @@
+[31mPharo cannot locate the sources file named C:\Users\Hamster\Desktop\work\prjcts\poker\pharo\Pharo8.0-32bit-bbcdf97.sources.
+
+Please check that the file is named properly and is in the
+same directory as this image.
+[0mStartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withSourceRef:
+PharoFilesOpener>>informCannotLocateSources
+PharoFilesOpener>>sourcesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SourceFileArray class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup: in Block: [ :arg2 | arg2 startup: arg1 ]
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do: in Block: [ arg2 value: arg3 ]
+BlockClosure>>on:do:
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do: in Block: [ :arg3 | ...
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>launchSnapshot:andQuit:
+[ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ] in SessionManager>>snapshot:andQuit: in Block: [ tmp3 := self launchSnapshot: arg1 andQuit: arg2....etc...
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ self value....
+[0m[31m#deck is missing, and does not understand #deal:
+[0mUndefinedObject>>doesNotUnderstand: #deal:
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+RubSmalltalkEditor>>browseClassOfExpression
+RubSmalltalkEditor>>browseFullClass
+[ :arg2 | arg2 perform: arg1 ] in GLMTextEditorRequest class>>for: in Block: [ :arg2 | arg2 perform: arg1 ]
+GLMMorphicPharoScriptRenderer(GLMMorphicRubricTextRenderer)>>actOnTextEditorRequest:
+MessageSend>>value:
+MessageSend>>cull:
+MessageSend>>cull:cull:
+[ action cull: arg1 cull: announcer ] in AnnouncementSubscription>>deliver: in Block: [ action cull: arg1 cull: announcer ]
+BlockClosure>>on:do:
+BlockClosure>>on:fork:
+AnnouncementSubscription>>deliver:
+[ tmp4 deliver: arg1 ] in SubscriptionRegistry>>deliver:to:startingAt: in Block: [ tmp4 deliver: arg1 ]
+BlockClosure>>ifCurtailed:
+SubscriptionRegistry>>deliver:to:startingAt:
+SubscriptionRegistry>>deliver:to:
+SubscriptionRegistry>>deliver:
+GLMPharoScriptPresentation(Announcer)>>announce:
+GLMPharoScriptPresentation(GLMAnnouncer)>>announce:
+GLMPharoScriptPresentation(GLMLoggedObject)>>announce:
+GLMPharoScriptPresentation(GLMRubricSmalltalkCodePresentation)>>browseFullClass
+[ :arg1 | arg1 browseFullClass ] in GLMPharoScriptPresentation(GLMRubricSmalltalkCodePresentation)>>browsingSelectionActions in Block: [ :arg1 | arg1 browseFullClass ]
+BlockClosure>>glamourValueWithArgs:
+GLMGenericAction(GLMAction)>>actOn:
+GLMGenericAction(GLMAction)>>morphicActOn:
+[ :arg3 | arg3 action morphicActOn: arg2 ] in GLMMorphicPharoScriptRenderer(GLMMorphicWidgetRenderer)>>installActionsOnModel:fromPresentation: in Block: [ :arg3 | arg3 action morphicActOn: arg2 ]
+[0m
